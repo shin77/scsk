@@ -3,17 +3,17 @@
 import SQLlib
 
 html = """
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Database</title>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://35.76.245.229/cgi-bin/dashboard.py -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>output</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="/html/css/home.css" />
-        <link rel="stylesheet" href="/html/css/style.css" > <!--多分ない-->
+	<link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="./Database_files/style.css"> <!--多分ない-->
 
     <!-- Bootstrap core CSS -->
-<link href="../html/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./Database_files/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -32,22 +32,39 @@ html = """
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="../html/dashboard.css" rel="stylesheet">
-  </head>
+    <link href="./Database_files/dashboard.css" rel="stylesheet">
+  <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
   <body>
 		<header>
-			<div class="container mx-auto">
-                                <div class="mx-auto">
+			<div class="container">
 				<div class="icon">
-					<img src="/html/images/icon1.png" width="150" alt="toro's picture">
+					<img src="images/icon1.png" width="150" alt="toro's picture">
 				</div>
 				<div class="info">
-					<h1>ViewFormation</h1><br>
-					<p>あなたの大切な個人情報を管理します</p>
-                                </div>
-                                </div>
+					<h1>Viewformation</h1><br>
+					<h2>いつでもどこでもあなたに情報を。</h2><br>
+					<h2>データ管理にお困りのあなたに寄り添います</h2>
+				</div>
 			</div>
+			
 		</header>
+						
+						
+						
+		 <main>
+		<div class="textbody">
+							
+					
+			<div class="heading">
+				<h2 class="headingtext">こちらがあなたの情報です！</h2><br>
+				<div class="icon2">
+					<img src="images/icon3.png" width="150" alt="toro's picture">
+				</div>
+			</div>				
+							
+							
+			
 
 <div class="container-fluid">
   <div class="row">
@@ -65,6 +82,111 @@ html = """
             </tr>
           </thead>
           <tbody>
+
+                <tr>
+                  <td>testuser</td>
+                  <td>姓名</td>
+                  <td>テストさん</td>
+                  <td>2021-10-13</td>
+                  <td>Amazon</td>
+                  <td>https://www.amazon.co.jp/</td>
+                  <td>2021-10-13</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>姓名</td>
+                  <td>テストさん1</td>
+                  <td>2021-10-13</td>
+                  <td>Google</td>
+                  <td>None</td>
+                  <td>2021-10-13</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>生年月日</td>
+                  <td>1980/01/01</td>
+                  <td>2021-10-13</td>
+                  <td>Google</td>
+                  <td>None</td>
+                  <td>2021-10-13</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>性別</td>
+                  <td>男</td>
+                  <td>2021-10-13</td>
+                  <td>Google</td>
+                  <td>None</td>
+                  <td>2021-10-13</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>電話番号</td>
+                  <td>09090090909</td>
+                  <td>2021-10-14</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td>2021-10-14</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>電話番号</td>
+                  <td>09011110990</td>
+                  <td>2021-10-14</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td>2021-10-14</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>性別</td>
+                  <td>LGBT</td>
+                  <td>2021-10-14</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td>2021-10-14</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>E-mail</td>
+                  <td>test@yahoo.co.jp</td>
+                  <td>2021-10-14</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td>2021-10-14</td>
+                </tr>
+                <tr>
+                  <td>testuser</td>
+                  <td>E-mail</td>
+                  <td>sese@yahoo.co.jp</td>
+                  <td>2021-10-14</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td>2021-10-14</td>
+                </tr>
+          </tbody>
+      
+    
+  
+
+<script src="./Database_files/jquery-3.5.1.slim.min.js.ダウンロード" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="./Database_files/bootstrap.bundle.min.js.ダウンロード"></script>
+        <script src="./Database_files/feather.min.js.ダウンロード"></script>
+        <script src="./Database_files/Chart.min.js.ダウンロード"></script>
+        <script src="./Database_files/dashboard.js.ダウンロード"></script>
+
+
+</table></div></div></div>
+							
+		</div>
+		</main>
+				
+		<div class="returnbutton"><a href="home.html">HOME画面へ</a></div>		
+				
+				
+				
+	</body>
+</html>
 """
 conn = SQLlib.connect_personalDB()
 cursor = conn.cursor()
