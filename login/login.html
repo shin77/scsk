@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ログイン</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="start.css" />
+		<link rel="STYLESHEET" href="tm.css" type="text/css">
+		<script type="text/javascript" src="login.js">
+		</script>
+       <!-- <link rel="stylesheet" href="css/style.css" > 多分ない-->
+    </head>
+    <body>
+		
+        <main>
+		<div class="textbody">
+		
+          <form method="POST" action="sample.cgi">
+			
+			<div class="container">
+				<div class="icon">
+					<img src="images/icon1.png" width="150" alt="toro's picture">
+				</div>
+				<div class="info">
+					<h1 style ="color: white;">Viewformation</h1><br>
+					<p>あなたの大切な個人情報を管理します</p>
+				</div>
+			</div>
+			<!--ログインのボタン-->
+			<div align="center">
+				             <table border="0">
+				                 <form action="Post" method="get">
+				                     <tr>
+				                         <th class="login_field" >
+				                             ユーザID
+				                         </th>
+				                         <td class="login_field">
+			                            <input type="text" name="user_id" value="" size="24" id="user_id"
+										onkeyup="fieldChanged();"
+										onchange="fieldChanged();">
+			                         </td>
+				                     </tr>
+				                     <tr>
+				                         <th class="login_field">
+				                             パスワード
+				                         </th>
+				                         <td class="login_field">
+				                             <input type="password" value="" size="24" id="password"
+											 onkeyup="fieldChanged();"
+											 onchange="fieldChanged();">
+				                         </td>
+				                     </tr>
+				                     <tr>
+				                         <td colspan="2" style="position: relative; top: 8px; left: 196px;">
+				                            <input type="submit" value="ログイン" id="login" onclick="return passwdCheck();">
+				                         </td>
+				                     </tr>
+				                 </form>
+				             </table>
+				         </div>
+				     </body>
+				</html>
+        </form>
+		</div>
+	</main>
+    </body>
+</html>
