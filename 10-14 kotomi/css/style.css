@@ -1,0 +1,35 @@
+ /*body{
+     background-image:url("https://www.beiz.jp/images_M/green/green_00097.jpg")
+ }
+*/
+body div p.title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+body div form.uk-search.uk-search-default{
+top: 0;
+right: 0;
+background-color:  whitesmoke;
+border-color: black;
+border-style:solid;
+border-width: 1px;
+}
+
+body a.uk-button.uk-button-default.add-link{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  whitesmoke;
+    border-color: black;
+    border-style:solid;
+    border-width: 2px;
+}
+
+div.home-clicker{
+    text-align: center;
+    margin: 24px;
+}
+
+
+

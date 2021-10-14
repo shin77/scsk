@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title</title>
+        <title>Input</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="uikit2.css" />
+		<link rel="stylesheet" href="input.css" />
         <link rel="stylesheet" href="css/style.css" > <!--多分ない-->
-        <script src="uikit.min.js"></script>
-        <script src="uikit-icons.min.js"></script>
+        <!--<script src="uikit.min.js"></script>
+		<script src="uikit-icons.min.js"></script> -->
+		
+		
     </head>
     <body>
         
-        <ul>
+		<header>
+			<div class="container">
+				<div class="icon">
+					<img src="images/icon1.png" width="150" alt="toro's picture">
+				</div>
+				<div class="info">
+					<h1>Viewformation</h1><br>
+					<h2>いつでもどこでもあなたに情報を。</h2><br>
+					<h2>データ管理にお困りのあなたに寄り添います</h2>
+				</div>
+			</div>
+			
+		</header>
+		
+		
+        <main>
+		<div class="textbody">
+		
           <form method="POST" action="sample.cgi">
-            <p><span class="m1">サイト名</span>：<input type="text" name="NAME"></p>
-            <p><span class="m2">URL</span>：<input type="text" name="email"></p>
-            <p><span class="m3">ユーザー名</span>：<input type="text" name="NAME" size="20"></p>
-            <p><span class="m4">パスワード</span>：<input type="text" name=""></p>
-            <p><span class="m5">氏名</span>：<input type="text" name=""></p>
+				
+			<div class="heading">
+				<h2 class="headingtext">あなたの情報を登録してください！</h2><br>
+				<div class="icon2">
+					<img src="images/icon2.png" width="150" alt="toro's picture">
+				</div>
+			</div>
+					
+            <p><span class="m1">サイト名</span>：<input type="text" name="company"></p>
+			<p><span class="m2">URL</span>:<input type="text" name="url" size="40"></span></p>
+            <p><span class="m3">ユーザー名</span>：<input type="text" name="user" size="20"></p>
+            <p><span class="m4">パスワード</span>：<input type="text" name="pwd"></p>
+            <p><span class="m5">氏名</span>：<input type="text" name="name"></p>
             <p><span class="m6">生年月日</span>：
                 <!--year-->
                 <select name="year">
+                    <option value="1980y">1970年</option>
+                    <option value="1981y">1971年</option>
+                    <option value="1982y">1972年</option>
+                    <option value="1983y">1973年</option>
+                    <option value="1984y">1974年</option>
+                    <option value="1985y">1975年</option>
+                    <option value="1986y">1976年</option>
+                    <option value="1987y">1977年</option>
+                    <option value="1988y">1978年</option>
+                    <option value="1989y">1979年</option>
                     <option value="1980y">1980年</option>
                     <option value="1981y">1981年</option>
                     <option value="1982y">1982年</option>
@@ -117,13 +154,22 @@
             <p><span class="m7">性別</span>:<input type="radio" name="gender" value="male" />男性
                 <input type="radio" name="gender" value="female" checked/>女性
                 <input type="radio" name="gender" value="other" checked/>その他</p>
-            <p><span class="m8">電話番号</span>：<input type="text" name="NAME">
-                   - <input type="text" name="NAME">
-                   - <input type="text" name="NAME"></p>
-            <p><span class="m9">携帯番号</span>：<input type="text" name="NAME">
-                   - <input type="text" name="NAME">
-                   - <input type="text" name="NAME"></p>
-            <p><span class="m10">メールアドレス</span>：<input type="text" name="email"></p>
+            <p><span class="m8">電話番号</span>：<input type="text" name="tel" size="8">
+                   - <input type="text" name="NAME" size="8">
+                   - <input type="text" name="NAME" size="8"></p>
+            <p><span class="m9">携帯番号</span>：<input type="text" name="tel2" size="8">
+                   - <input type="text" name="NAME" size="8">
+                   - <input type="text" name="NAME" size="8"></p>
+            <p><span class="m10">メールアドレス</span>：<input type="text" name="email">@
+                 <input list="emailadress" id="email" name="emailadress" />
+                    <datalist id="emailadress">
+                    <option value="ezweb.ne.jp">
+                    <option value="softbank.ne.jp">
+                    <option value="docomo.ne.jp">
+                    <option value="gmail.com">
+                    <option value="yahoo.co.jp">
+                    </datalist>
+            </p>
             <p><span class="m11">住所</span>：<select name="pref_id">
                 <option value="" selected>都道府県</option>
                 <option value="1">北海道</option>
@@ -174,9 +220,14 @@
                 <option value="46">鹿児島県</option>
                 <option value="47">沖縄県</option>
                 </select><br>
-                <span class="m12"></span><input type="text" name="email" placeholder="市区町村"></p><br>
-            <p><input type="submit" value="保存" id="save"></p>
-          </form>
-          
+                <span class="m12"></span><input type="text" name="email" placeholder="市区町村" size="60"></p><br>
+			<!--<p><input type="submit" value="保存" id="save" class="save"></p>-->
+			<div class="save"><a href="">保存</a></div>
+			<div class="returnbutton"><a href="home.html">HOME画面へ</a></div>
+            
+        </form>
+		
+		</div>
+		</main>
     </body>
 </html>
